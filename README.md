@@ -3,7 +3,7 @@ Codle Game - A Wordle-like game for code snippets.
 
 ## How to Run
 
-1. Navigate to the app folder:
+1. Navigate to the app folder: (Only copy if you're Ben, find your own folder and copy it)
    ```
    cd "c:\Users\benpr\Downloads\VS Portfolio 2\Codle\app"
    ```
