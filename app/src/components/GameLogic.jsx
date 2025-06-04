@@ -41,4 +41,14 @@ export default function GameLogic() {
     };
     loadPuzzle();
 }, []);
+return (
+    <div className="p-4">
+      <h2>{question}</h2>
+      <div>
+        {bubbleBank.map((word, i) => (
+          <button key={i}>{word}</button>
+        ))}
+      </div>
+    </div>
+  );
 }
