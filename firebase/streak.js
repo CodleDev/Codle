@@ -3,6 +3,8 @@
   This file handles the streaks for the users and updates them in the Firebase database.
   It runs when the user has beat the puzzle for the day.
   Streaks are only updated if the user completes the game.
+
+  Used https://firebase.google.com/docs/firestore/query-data/get-data for logic.
 */
 
 import { doc, getDoc, setDoc } from "firebase/firestore";
