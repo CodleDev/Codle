@@ -11,6 +11,7 @@ Codle Game - A Wordle-like game for code snippets.
 2. Install dependencies:
    ```
    npm install
+   npm install tailwindcss @tailwindcss/vite
    ```
 
 3. Start the development server:
