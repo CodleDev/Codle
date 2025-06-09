@@ -1,11 +1,14 @@
 #root {
-    max-width: 1280px;
-    font-size: 150%;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+  font-family: 'monospace', monospace;
+  font-size: 100%;
 }
 
 h1 {
   font-size: 100px;
+  background-size: 0%;
+}
+
+h2 {
+  font-size: 30px;
+  background-size: 0%;
 }

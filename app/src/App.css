@@ -1,51 +1,85 @@
 #root {
+  height: 100vh;
   max-width: 1920px;
-  max-height: max-content;
+  max-height: 1080px;
   margin: 0px;
   padding: 2rem;
-
+  background-color: rgb(149, 220, 255);
   text-align: center;
 }
 
 .title {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  width: 500px;
+  height: 500px;
   color: azure;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 100px;
+  background-color: #242424;
+  background-position: 0%;
+  border-radius: 100px;
+}
+
+.spinner1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  background-color: #ff6464;
+  animation: spinner-spin infinite 30s linear;
+  border-radius: 100px;
+}
+
+.spinner2 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  background-color: #646cff;
+  animation: spinner-spin infinite 20s linear;
+  border-radius: 100px;
+}
+
+.spinner3 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  background-color: #64ff69;
+  animation: spinner-spin infinite 10s linear;
+  border-radius: 100px;
 }
 
 .button {
-  color: #646cff;
-  height: 6em;
-  padding: 1.5em;
+  height: 100px;
+  width: 275px;
+  display: inline-block;
+  color: #646cff; 
   will-change: filter;
   transition: filter 300ms;
 }
+
 .button:hover {
-  filter: drop-shadow(0 0 2em #73F0FF);
+  filter: drop-shadow(0 0 0.5em #73F0FF);
 }
 .button.react:hover {
-  filter: drop-shadow(0 0 2em #73F0FF);
+  filter: drop-shadow(0 0 0.5em #73F0FF);
 }
 
-@keyframes button-spin {
+@keyframes spinner-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .button {
-    animation: button-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

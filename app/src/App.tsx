@@ -6,12 +6,17 @@ import PlayButton from "./components/PlayButton";
 function App() {
   return (
     <>
+      <a>
+        <div className="spinner1"></div>
+        <div className="spinner2"></div>
+        <div className="spinner3"></div>
+      </a>
       <h1 className="title">
         <Menu />
+        <a className="button">
+          <PlayButton />
+        </a>
       </h1>
-      <a className="button">
-        <PlayButton />
-      </a>
     </>
   );
   /*
